@@ -1,0 +1,91 @@
+.field-details {
+  position: relative;
+  height: 75vh;
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 25px !important;
+  &__header {
+    text-align: left;
+    font-size: 22px;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    &--tags {
+      .field-details__field {
+        margin-right: 10px;
+        input[type="checkbox"]:checked,
+        input[type="checkbox"]:checked:active,
+        input[type="checkbox"] {
+          display: none;
+        }
+        label {
+          display: block;
+          padding: 5px 10px;
+          background-color: $bg-color;
+          border: 1px solid $border-color;
+          color: $primary-color-lighten;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color .25s ease-in-out,
+                      color .25s ease-in-out;
+          &:hover {
+            background-color: $primary-color-lighten;
+            color: $border-color;
+          }
+        }
+      }
+    }
+  }
+  .minor-message {
+    font-size: 10px;
+    font-weight: 500;
+    color: $info-text;
+  }
+
+  &__field {
+    margin-bottom: 35px;
+    &:first-of-type { margin-right: 50px; }
+    input { width: 270px; }
+  }
+  &__groups-list {
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 25px !important;
+    h4 {
+      text-align: left;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    P {
+      margin: 0;
+      margin-bottom: 10px;
+      color: $primary-color-lighten;
+    }
+
+  }
+  &__groups-item {
+    background-color: $white;
+    border: 1px solid $primary-color-lighten;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    h5, p { margin: 0; }
+    h5 { margin-bottom: 5px; }
+  }
+}

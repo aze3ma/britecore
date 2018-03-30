@@ -1,0 +1,101 @@
+.field-types {
+  height: 75vh;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow-y: auto;
+  padding: 25px !important;
+  &__header {
+    text-align: left;
+    font-size: 22px;
+  }
+  &__filter-form {
+    margin-bottom: 25px;
+    input {
+      width: 100%;
+    }
+  }
+  dl {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    dd,
+    dt {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    .card-wrapper:first-child {
+      dd,
+      dt {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        i {
+          color: inherit;
+        }
+      }
+      dt:first-child {
+        color: inherit;
+      }
+    }
+  }
+  &__cards-list {
+    display: flex;
+    flex-flow: column wrap;
+    li+li {
+      margin-top: 25px;
+    }
+  }
+  &__cards-item {
+    background-color: $white;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &--active {
+      background-color: $primary-color-lighten;
+      .field-types__label {
+        font-size: 12px;
+        font-weight: 500;
+        color: $border-color !important;
+        i {
+          color: $border-color !important;
+        }
+      }
+      .field-types__value {
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &:hover {
+      background-color: $primary-color-lighten;
+      .field-types__label {
+        font-size: 12px;
+        font-weight: 500;
+        color: $border-color !important;
+        i {
+          color: $border-color !important;
+        }
+      }
+      .field-types__value {
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+  &__label {
+    font-size: 12px;
+    font-weight: 500;
+    color: $primary-color-lighten;
+    &:first-of-type { font-family: serif; }
+  }
+  &__value {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

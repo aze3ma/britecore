@@ -1,0 +1,18 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  button:first-child {
+    margin-left: -10px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    button + button {
+      margin-left: 20px;
+    }
+  }
+
+}
