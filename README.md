@@ -1,4 +1,4 @@
-# bitecore
+# Britecore
 
 > BiteCore exercise
 

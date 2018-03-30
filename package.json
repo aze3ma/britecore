@@ -1,7 +1,7 @@
 {
-  "name": "bitecore",
+  "name": "britecore",
   "version": "1.0.0",
-  "description": "BiteCore exercise",
+  "description": "BriteCore exercise",
   "author": "Mahmoud Abdulazim <mahmoud.abdulazim@robustastudio.com>",
   "private": true,
   "scripts": {
