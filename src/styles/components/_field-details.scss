@@ -1,12 +1,13 @@
 .field-details {
   position: relative;
-  height: 75vh;
+  height: 100vh;
   background-color: $white;
   border: 1px solid $border-color;
   border-left: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 25px !important;
+  overflow-y: auto;
   &__header {
     text-align: left;
     font-size: 22px;
@@ -20,7 +21,14 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
+    @media #{$desktop} {
+      display: block;
+    }
     &--tags {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
       .field-details__field {
         margin-right: 10px;
         input[type="checkbox"]:checked,

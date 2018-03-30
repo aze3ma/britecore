@@ -9,7 +9,7 @@
               <i class="ion-arrow-down-b"></i>
             </a>
           </h1>
-        <nav class="navbar col-three-fourths">
+        <nav class="navbar col col-three-fourths">
           <h2 class="visually-hidden">BriteCore Navbar</h2>
           <ul class="navbar__list list list--inline">
             <li class="navbar__item">
